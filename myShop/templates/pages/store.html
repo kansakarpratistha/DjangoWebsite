@@ -1,0 +1,27 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+<div class="items">
+    <div class="container">
+        <div class="row">
+            {% for submenu in submenuData %}
+            {% if submenu.items_set.all %}
+            {% for items in submenu.items_set.all %}
+            <div class="col-4">
+                {% if items.image%}
+                <img src="{{items.image.url}}" class="img-fluid" alt="itempicture"><br>
+                {% endif %}
+                <a href="{% url 'item_details' items.slug %}">{{items.item_name}}</a>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

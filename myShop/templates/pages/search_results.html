@@ -1,0 +1,30 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+<div class="items">
+    <div class="container">
+        <div class="row">
+            {% if items_list %}
+            {% for item in items_list %}
+            <div class="col-4">
+                {% if item.image%}
+                <img src="{{item.image.url}}" class="img-fluid" alt="itempicture"><br>
+                {% endif %}
+                <a href="{% url 'item_details' item.slug %}">{{item.item_name}}</a>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div style="margin:auto; white-space:pre-wrap;">
+                <h4 style="font-family:'Strait';">Sorry no items matched.</h4>
+            </div>
+            {% endif %}
+
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

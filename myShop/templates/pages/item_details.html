@@ -1,0 +1,22 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+<div class="item_details">
+    <div class="container">
+        {% for items in itemData %}
+        <div class="detail_row">
+            <img src="{{items.image.url}}" class="detail_img" alt="itempicture"><br><br>
+            <h4 class="item_title">{{items.item_name}}</h4>
+            <p class="item_description">{{items.description|safe}}</p>
+            <p>Price : Rs{{items.price}} </p>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}

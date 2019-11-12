@@ -1,0 +1,253 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: tan;
+}
+.container{
+    width:100%;
+}
+
+.header>.container{
+    background: rgb(153, 181, 224);
+    color: black;
+    background-blend-mode: soft-light;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-tabs>li>a {
+    
+    color: white;
+}
+.nav-tabs>li>a:hover {
+
+    color: black;
+}
+
+a.nav-link.dropdown-toggle {
+    color: white;
+}
+
+.navbar-brand{
+    margin: 1.5%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form-inline{
+    margin-top: 9%; 
+    position:relative; 
+    float:right;
+}
+.form-control{
+    height: calc(1.5em + 0.50rem + -3px);
+}
+.text-right{
+    margin: 0.5% 0% 0.5% 1.5%;
+    font-size: 18px;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 10;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    position:fixed;
+}
+
+.dropdown-submenu>a:after{
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.slider>.container{
+    padding-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slides>img{
+display:inline; position:relative; width:100%; height:448px;
+}
+.slides>h4{
+
+ bottom:80px;
+ left:200;
+ position:absolute;
+ right:20;
+ padding:10px 15px;
+ z-index:10;
+ background:none
+ repeat scroll 0 0 rgba(0,0,0,0.4);
+ color:#fff;
+ font-size:30px;
+ display:inline-block;
+}
+.slides>h6{
+
+ bottom:20px;
+ left:100;
+ position:absolute;
+ right:20;
+ padding:10px 15px;
+  z-index:10;
+  background:none repeat scroll 0 0 rgba(0,0,0,0.4);
+  color:#fff;
+  display:inline-block;
+}
+
+
+#aboutus{
+    padding: 3em 0;
+}
+
+.title{
+    font-family: 'Strait', sans-serif;
+    font-size: 35px;
+    color: black;
+    margin: 2rem;
+    text-align: center;
+}
+
+#aboutus>.container>.row-1{
+    background: rgb(109, 184, 109);
+    margin-bottom: 5%;
+}
+
+
+#aboutus>.container>.row-2>.col-4{
+    text-align: center;
+}
+#aboutus>.container>.row-2>.col-4>.icon{
+    width: 25%;
+    margin-bottom: 15%;
+}
+#aboutus>.container>.row-2>.col-4>h3{
+    margin:0% 10% 0% 10%;
+}
+.footer>.container{
+    background: rgb(152, 181, 224);
+    color: black;
+    text-align: center;
+    font-family: 'Strait', sans-serif;
+    font-size: 20px;
+}
+
+.footer>.container>.row{
+    padding: 3%;
+}
+
+.footer>.container>.row>.address{
+    text-align: left;
+}
+
+.footer>.container>.row>.openhrs{
+    text-align: right;
+}
+
+.loginform>.container{
+    width:50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.loginform>.container>.btn{
+    margin-top: 3%;
+}
+
+.items>.container>.row>.col-4{
+    padding: 1%;
+    max-width:31.33%;
+    margin:1%;
+    text-align: center;
+    background: lemonchiffon;
+}
+
+.items>.container>.row>.col-4>.img-fluid{
+    width: 75%;
+    height: 11em;
+}
+
+.contact>.container{
+    width:70%;
+    margin-top: 5%;
+    margin-bottom:5%;
+    padding: 2%;
+    background: wheat;
+}
+.contact>.container>.row>.form-group>h2{
+    
+    text-align: center;
+    font-family:'Strait', sans-serif ;
+}
+
+.contact>.container>.row>.form-group>.form-control{
+    /* width:80%; */
+    border: 2px solid black;
+}
+.contact>.container>.row>.form-group>.btn{
+    margin-top: 2%;
+}
+.contacticon{
+    width: 18%;
+    margin:3%;
+    margin-left:25%;
+}
+
+.contacticon:hover{
+    transform: scale(1.3);
+}
+.links{
+    padding:2%;
+    font-size: 17px;
+}
+
+.item_details>.container{
+width:80%;
+margin:5% auto 5% auto;
+}
+
+.item_details>.container>.row{
+
+background:wheat;
+padding:5%;
+}
+.detail_img{
+width:500px;
+margin:auto;
+}
+
+.detail_row{
+background:wheat;
+padding: 5% 20% 5% 20%;
+}
+
+.detail_row>p{
+font-family: 'Strait';
+font-weight: '40';
+font-size:20px;
+}
+

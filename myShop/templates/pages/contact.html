@@ -1,0 +1,39 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+<div class="contact">
+    <div class="container">
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success">{{message}}</div>
+        {% endfor %}
+        {% endif %}
+        <div class="row">
+
+            <form action="{% url 'contact' %}" method="post" class="col-6 form-group">
+                {% csrf_token %}
+                <h2>Any queries?</h2>
+                <input type="text" class="form-control" name="name" placeholder="Enter your name here" required><br>
+                <input type="email" class="form-control" name="email" placeholder="Enter your email here" required><br>
+                <textarea class="form-control rounded-0" id="Textarea" rows="7" name="message"
+                          placeholder="Enter your message here" required></textarea>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="col-6 links">
+                <a href="https://www.facebook.com/pratistha.kansakar"><img src="{% static 'frontend/icons/fbicon.png' %}" alt=""
+                                                                           class="contacticon"></a><br>
+                <a href="https://www.instagram.com/namasteconcern/"><img src="{% static 'frontend/icons/igicon.png' %}" alt=""
+                                                                         class="contacticon"></a><br>
+                <a href="https://www.instagram.com/namasteconcern/"><img src="{% static 'frontend/icons/twittericon.png' %}" alt=""
+                                                                         class="contacticon"></a><br>
+                <a href="tel:01-4223669"><img src="{% static 'frontend/icons/callicon.png' %}" alt="" class="contacticon"></a>4223669 /
+                4223718<br>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

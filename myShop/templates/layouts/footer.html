@@ -1,0 +1,33 @@
+{% load static %}
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="address col-6"><h3>Visit Our Store</h3>
+                <img src="{% static 'frontend/icons/addressicon.png' %}" alt="" class="infoicon"><br>
+                Keltole, Masangalli<br>Kathmandu, Nepal
+            </div>
+            <div class="openhrs col-6"><h3>Opening Hours</h3>
+                <img src="{% static 'frontend/icons/openhrsicon.png' %}" alt="" class="infoicon"><br>
+                Sunday-Friday<br>9am-7pm
+            </div>
+        </div>
+        Copyright &copy; 2019 Namaste Multi-Kitchen Concern
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{% static 'frontend/js/animate.js' %}"></script>
+<script type="text/javascript" src="{% static 'frontend/js/function.js' %}"></script>
+<script type="text/javascript" src="{% static 'frontend/js/slick.js' %}"></script>
+<script type="text/javascript" src="{% static 'frontend/js/slick-min.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slick_slider').slick({
+            arrows:false,
+            autoplay:true,
+            autoplaySpeed:1000
+        });
+    });
+
+</script>
+</body>
+</html>

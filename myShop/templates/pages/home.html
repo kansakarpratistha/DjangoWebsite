@@ -1,0 +1,42 @@
+{% extends 'master/master.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="slider">
+    <div class="container">
+        <div class="row slick_slider">
+            {% for slide in sliderData %}
+            <div class="slides"><img src="{{slide.image.url}}" alt=""><h4>{{slide.title}}</h4><h6>{{slide.description|safe|slice:'50'}}</h6></div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div id="aboutus">
+    <div class="container ">
+        <div class="row row-1 justify-content-center fadeInUp  animatable">
+            <div class="col-6">
+                <h2 class="title">WELCOME TO NAMASTE</h2>
+
+            </div>
+
+        </div>
+        <div class=" row row-2 fadeInUp  animatable">
+            <div class="col-4">
+                <img src="images/opened.png" class="icon" alt="">
+                <h3>We have been providing service to you since 1997A.D</h3>
+            </div>
+            <div class="col-4">
+                <img src="images/qualityproduct.png" class="icon" alt="">
+                <h3>We provide you high quality products at the best price</h3>
+            </div>
+            <div class="col-4">
+                <img src="images/service.png" class="icon" alt="">
+                <h3>We provide great service to meet customer satisfaction</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
